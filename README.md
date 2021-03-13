@@ -27,7 +27,8 @@ docker-compose up --build
 * ローカルフォルダがマウントされている
 
 ## jupyter notebook説明
-* Sweetviz_boston.ipynb : Sweetvizを活用したEDAのnotebook
+* Sweetviz.ipynb : Sweetvizを活用したEDAのnotebook
+* Pandas-profiling.ipynb : Pandas-profilingを活用したEDAのnotebook
 
 
 ## 動作環境
