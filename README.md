@@ -8,7 +8,8 @@
 ├── .dockerignore        
 ├── Dockerfile                Dockerファイル
 ├── docker-compose.yml
-└── notebook                  jupyter notebook
+├── notebook                  jupyter notebook
+└── data                      dataファイル
 ```
 
 ## 環境構築
@@ -29,6 +30,8 @@ docker-compose up --build
 ## jupyter notebook説明
 * Sweetviz.ipynb : Sweetvizを活用したEDAのnotebook
 * Pandas-profiling.ipynb : Pandas-profilingを活用したEDAのnotebook
+* autoviz.ipynb : autovizを活用したEDAのnotebook
+* dtale : dtaleを活用したEDAのnotebook
 
 
 ## 動作環境

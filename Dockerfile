@@ -17,4 +17,5 @@ ENV PATH /opt/anaconda3/bin:$PATH
 RUN pip install --upgrade pip \
 	sweetviz \
 	pandas_profiling \
-	autoviz
+	autoviz \
+	dtale
