@@ -1,5 +1,5 @@
-# Explanatory-Data-Analysis
-* Explanatory Data Analysis(探索的データ解析)のプログラム
+# Exploratory-Data-Analysis
+* Exploratory Data Analysis(探索的データ解析)のプログラム
 
 ## リポジトリ構成
 ```
@@ -14,12 +14,12 @@
 
 ## 環境構築
 
-* Dockderfileがあるホスト側のフォルダへ移動（例：Desktop/Explanatory-Data-Analysis）
+* Dockderfileがあるホスト側のフォルダへ移動（例：Desktop/Exploratory-Data-Analysis）
 ```
-cd Desktop/Explanatory-Data-Analysis
+cd Desktop/Exploratory-Data-Analysis
 ```
 
-* Dockerによる環境構築（フォルダをマウント：Desktop/Explanatory-Data-Analysis）
+* Dockerによる環境構築（フォルダをマウント：Desktop/Exploratory-Data-Analysis）
 ```
 docker-compose up --build
 ```
