@@ -21,7 +21,7 @@ cd Desktop/Exploratory-Data-Analysis
 
 * Dockerによる環境構築（フォルダをマウント：Desktop/Exploratory-Data-Analysis）
 ```
-docker-compose up
+docker-compose up --build
 ```
 
 * ブラウザーを立ち上げてlocalhost:8888へアクセス
