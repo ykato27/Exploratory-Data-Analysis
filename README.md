@@ -1,38 +1,72 @@
 # Exploratory-Data-Analysis
-* Exploratory Data Analysis(探索的データ解析)のプログラム
+
+- Exploratory Data Analysis(探索的データ解析)のプログラム
 
 ## リポジトリ構成
+
 ```
 .
-├── README.md                 READMEファイル
-├── .dockerignore        
-├── Dockerfile                Dockerファイル
+├── Dockerfile
+├── README.md
+├── data
+│   └── Boston.csv
+├── docker
+│   ├── autoviz
+│   │   ├── Dockerfile
+│   │   └── requirements.txt
+│   ├── dtale
+│   │   ├── Dockerfile
+│   │   └── requirements.txt
+│   ├── pandas-profiling
+│   │   ├── Dockerfile
+│   │   └── requirements.txt
+│   └── sweetviz
+│       ├── Dockerfile
+│       └── requirements.txt
+├── docker-compose-autoviz.yml
+├── docker-compose-dtale.yml
+├── docker-compose-pandas-profiling.yml
+├── docker-compose-sweetviz.yml
 ├── docker-compose.yml
-├── notebook                  jupyter notebook
-└── data                      dataファイル
+├── docs
+├── models
+├── notebooks
+│   ├── autoviz
+│   │   └── autoviz.ipynb
+│   ├── dtale
+│   │   └── dtale.ipynb
+│   ├── pandas-profiling
+│   │   ├── Pandas-profiling.ipynb
+│   │   └── Pandas-profiling_report.html
+│   └── sweetviz
+│       ├── Sweetviz.ipynb
+│       ├── sweetviz_report_1col.html
+│       └── sweetviz_report_2col.html
+├── pyproject.toml
+├── setup.cfg
+├── src
+│   └── __init__.py
+├── tests
+│   └── __init__.py
+└── work
 ```
 
 ## 環境構築
 
-* Dockderfileがあるホスト側のフォルダへ移動（例：Desktop/Exploratory-Data-Analysis）
+- Dockderfileがあるホスト側のフォルダへ移動（例：Desktop/Exploratory-Data-Analysis）
+
 ```
 cd Desktop/Exploratory-Data-Analysis
 ```
 
-* Dockerによる環境構築（フォルダをマウント：Desktop/Exploratory-Data-Analysis）
+- Dockerによる環境構築（フォルダをマウント：Desktop/Exploratory-Data-Analysis）
+
 ```
-docker-compose up --build
+docker-compose -f docker-compose-{*構築対象}.yml up --build
 ```
 
-* ブラウザーを立ち上げてlocalhost:8888へアクセス
-* ローカルフォルダがマウントされている
-
-## jupyter notebook説明
-* Sweetviz.ipynb : Sweetvizを活用したEDAのnotebook
-* Pandas-profiling.ipynb : Pandas-profilingを活用したEDAのnotebook
-* autoviz.ipynb : autovizを活用したEDAのnotebook
-* dtale : dtaleを活用したEDAのnotebook
-
+- ブラウザーを立ち上げてlocalhost:8888へアクセス
+- ローカルフォルダがマウントされている
 
 ## 動作環境
 マシンスペック（Mac)
